@@ -44,8 +44,102 @@
     </ul>
     </ol>
 
-    
+    <h1>Section 3: Attribute</h1>
 
+    <h3>1. Image Tag</h3>
+
+    <img src="lol.png" alt="lol.png not found">
+
+    <h3>2. Hyperlink - a Tag </h3>
+
+    <a href="https://www.facebook.com">Go to this link</a>
+
+    <h1>Section 4: Table</h1>
+
+    <h3>1. table example</h3>
+
+    <table border="5">
+      <thead> <!-- table head -->
+        <th>Number</th> <!-- th is data for table head -->
+        <th>Color</th>
+        <th>Country</th>
+      </thead>
+
+      <tr> <!-- tr is table row -->
+        <td>100</td> <!-- td is table data for tr/table row -->
+        <td>red</td>
+        <td>BD</td>
+      </tr>
+
+      <tr>
+        <td>200</td>
+        <td>green</td>
+        <td>USA</td>
+      </tr>
+    </table>
+
+    <h3>2. pop quiz! table</h3>
+
+    <table border="1">
+      <thead>
+        <th>Country</th>
+        <th>Flag</th>
+        <th>GDP</th>
+      </thead>
+
+      <tr>
+        <td>USA</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/35px-Flag_of_the_United_States.svg.png" alt=""></td>
+        <td>20,936,600</td>
+      </tr>
+
+      <tr>
+        <td>INDIA</td>
+        <td><img src="https://upload.wikimedia.org/wikipedia/en/thumb/4/41/Flag_of_India.svg/35px-Flag_of_India.svg.png" alt=""></td>
+        <td>2,622,984</td>
+      </tr>
+
+      <tr>
+        <td>BANGLADESH</td>
+        <td> <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Flag_of_Bangladesh.svg/35px-Flag_of_Bangladesh.svg.png" alt=""> </td>
+        <td>324,239</td>
+      </tr>
+
+    </table>
+
+    <h1>Section 5: Input tag</h1>
+
+    <h3>simple email and password</h3>
+    <input type="email" name="usermail" value="type your mail">
+    <input type="password" name="password" value="">
+    <input type="submit" name="button" value="click">
+    <h3>color picker!</h3>
+    <input type="color" name="" value="">
+
+    <h1>Section 6: Form & Label</h1>
+
+    <h3>1. Form</h3>
+
+    <form action="https://facebook.com" method="get">
+      <p>Enter anything to redirect( <b>method="get"</b>) to facebook</p>
+      <input type="text" name="userinput" value="fb">
+      <input type="submit" name="" value="submit button">
+
+    </form>
+<h3>2. Label</h3>
+    <!-- label, placeholder, required -->
+<label for="userinput">
+  Enter Text: <!-- if we wrote any text within label tag, its auto label with input -->
+  <input id="userinput" type="text" name="" value="">
+</label>
+
+<h3>3.placeholder,required</h3>
+
+<form>
+  <input type="text" name="" placeholder="not required" > <!-- replacing value with placeholder -->
+  <input type="text" name="" placeholder="required" required> <!-- required = user must fill -->
+  <input type="submit" name="" value="submit">
+</form>
 
 
   </body>
