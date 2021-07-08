@@ -141,6 +141,74 @@
   <input type="submit" name="" value="submit">
 </form>
 
+<h1>Section 7: Form & Selection with textarea</h1>
+
+<!--always remember label is within form tag-->
+<!--label attached with input-->
+<!--label & input tag = label's for is same input's id-->
+<!--if inputs name is same, we can count as one input-->
+
+<h2>Hotel Feedback Form</h2>
+<form method="get">
+  <h3>are you inside of outside usa</h3>
+
+  <label for="inusa">Inside:</label>
+  <input id="inusa" type="radio" name="location" value="usa">
+
+  <label for="outusa">Outside:</label>
+  <input id="outusa" type="radio" name="location" value="outside">
+
+  <h2>How was your service?</h2>
+
+   <select name="stars">
+     <option value="Good">3</option>
+     <option value="Ok">2</option>
+     <option value="Bad">1</option>
+
+   </select>
+
+   <h2>Any other feedback?</h2>
+   <textarea name="feedback" rows="8" cols="80"></textarea>
+
+   <input type="submit" name="" value="SUBMIT">
+
+ </form>
+
+   <h1>HTML FINAL ASSIGNMENT</h1>
+<form action="thankyou.html" method="get">
+
+
+   <h2>Course Sign Up Page</h2>
+   <p>Please Note:First Name, Last Name,Password and Email are required</p>
+
+   <label for="firstname">First Name:</label>
+   <input id='firstname' type="text" name="" value="" placeholder="First Name" required>
+   <label for="lastname">Last Name:</label>
+   <input id="lastname" type="text" name="" value="" placeholder="Last Name" required>
+  <br>
+  <label for="email">Email:</label>
+  <input id="email" type="email" name="" value="" placeholder="name@email.com" required>
+  <label for="password:">Password:</label>
+  <input id="password" type="password" name="" value="" required>
+
+  <p>Are you over the age of 18?</p>
+  <label for="yes">Yes:</label>
+  <input id="yes" type="radio" name="age" value="18">
+  <label for="no">No:</label>
+  <input id="no" type="radio" name="age" value="not18">
+
+  <p>Do you habe a Credit Card or paypal?</p>
+  <select name="CCorPaypal">
+    <option value="cc">Credit Card</option>
+    <option value="pp">Paypal</option>
+
+  </select>
+ <br>
+  <input type="submit" name="" value="Sign Up">
+
+  </form>
+
+
 
   </body>
 </html>
