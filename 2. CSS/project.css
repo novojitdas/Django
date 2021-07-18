@@ -1,0 +1,33 @@
+h1{
+  text-align: center;
+}
+
+td{
+  /* padding: top right bottom left */
+  padding: 120px 60px 120px 60px;
+  border: 8px solid blue;
+}
+
+.art{
+  margin: auto;
+}
+
+#a {
+  background-color: #241623;
+}
+
+#b {
+  background-color: #D0CD94;
+}
+
+#c {
+  background-color: #3C787E;
+}
+
+#d {
+  background-color: #C7EF00;
+}
+
+#e {
+  background-color: #D56F3E;
+}
