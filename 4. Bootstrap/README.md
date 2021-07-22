@@ -32,4 +32,7 @@
 - [sizing content](https://getbootstrap.com/docs/5.0/utilities/sizing/)
 - [vertical align](https://getbootstrap.com/docs/5.0/utilities/vertical-align/)
 - [spacing](https://getbootstrap.com/docs/5.0/utilities/spacing/)
+- [Grid*](https://getbootstrap.com/docs/5.0/layout/grid/)
+- []()
+- []()
 - []()

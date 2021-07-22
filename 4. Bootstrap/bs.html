@@ -13,11 +13,58 @@ covered topic -
     <title></title
   </head>
   <body>
-    <h1>Bootstrap!</h1>
 
-    <div style="margin-top:55px; padding-top:55px;" class="container-fluid text-sm-center p-5 bg-info text-white "> <!-- bg-light is background color & p-5 is padding -->
-        <h1 class="display-2">Full Stack Conf</h1>
-        <p class="lead">A One-day Conference About All Things JavaScript!</p>
+    <div class="container">
+      <!-- navbar with dropdown menu -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Novojit Dot Com</a>
+          <!-- button for mobile users -->
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!-- button ends, collapse menu items list starts -->
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <!-- dropdown menu item list -->
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown link
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!-- container ends -->
     </div>
+    <!-- Grid -->
+    <div class="container">
+  <div class="row">
+    <div class="col-lg-3 col-sm-6">coldsdsdsd</div>
+    <div class="col-lg-3 col-sm-6">coldsdsdsd</div>
+    <div class="col-lg-3 col-sm-6">coldsdsdsd</div>
+    <div class="col-lg-3 col-sm-6">coldsdsdsd</div>
+
+
+  </div>
+
+</div>
+
+
   </body>
 </html>
