@@ -1,0 +1,79 @@
+/* Syntax of css
+
+selected tag {
+  property: value;
+} */
+
+/* useful link for css reference: https://www.w3schools.com/cssref/css_selectors.asp  */
+
+/* Section 1: Basic CSS */
+
+/* 1. color */
+h1{
+  color: green;
+}
+
+/* 2. RGB */
+li{
+  color: rgb(230, 26, 11);
+}
+/* 3. HEX */
+p{
+  color: #0000FF;
+}
+/* 4. RGB ALPHA */
+h4{
+  color: rgba(230, 26, 11,0.5)
+  /* rgba is used for transparent color, value is between 0 to 1 */
+}
+
+/* Section 2: Div & Span  */
+
+div{
+  background: red;
+  border-color: blue;
+  border-width: thick;
+  /* border-width: 5px;  */
+  border-style: double;
+  /* border-style: dotted; */
+}
+
+span{
+  background: yellow;
+  color: red;
+}
+
+/* Section 3: body */
+
+body{
+  background: yellow;
+  /* background: url(https://image.freepik.com/free-vector/celebration-confetti-ribbons-frame_29865-675.jpg); */
+}
+
+/* Section 4: class & id  */
+/* dot is class & hash is id */
+.firstdiv {
+  background-color: white;
+}
+.seconddiv {
+  background-color: orange;
+
+}
+#single {
+  color: black;
+}
+
+/* h3 + ul means, after h3 every ul will be this -   */
+h3 + ul {
+  border: dotted 4px purple;
+}
+
+/* li a - all a tag inside the list  */
+li a{
+  color: green;
+}
+
+li a[href"link"]
+{
+  color: blue;
+}
