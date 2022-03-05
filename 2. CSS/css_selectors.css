@@ -1,0 +1,83 @@
+/* SECTION 1 */
+/* Grouping Selector */
+
+/* What if we have two groups of elements that share some of their style declarations? */
+      .read {
+      color: white;
+      background-color: black;
+      /* several unique declarations */
+    }
+    
+    .unread {
+      color: white;
+      background-color: black;
+      /* several unique declarations */
+    }
+    /* Both our .read and .unread selectors share the color: white; and background-color: black; declarations, but otherwise have several of their own unique declarations. To cut down on the repetition, we can group these two selectors together as a comma-separated list: */
+
+.read, 
+.unread {
+  color: white;
+  background-color: black;
+}
+
+.read {
+  /* several unique declarations */
+}
+
+.unread {
+  /* several unique declarations */
+}
+
+/* Both of the examples above (with and without grouping) will have the same result, but the second example reduces repetition of declarations and makes it easier to edit either the color or background-color for both classes at once. */
+
+
+/* ------------------------------------------------------------------------ */
+/* SECTION 2 */
+/* Chaining Selectors */
+
+/* Another way to use selectors is to chain them as a list without any separation. Let’s say we had the following HTML: */
+
+<div>
+  <div class="subsection header">Latest Posts</div>
+  <p class="subsection preview">This is where a preview for a post might go.</p>
+</div>
+
+/* We have two elements with the subsection class that have some sort of unique styles, but what if we only want to apply a separate rule to the element that also has header as a second class? Well, we could chain the two class selectors together in our CSS like so: */
+
+.subsection.header {
+      color: red;
+    }
+
+    /* Notice how there isn’t any space between the two selectors here. What .subsection.header does is it selects any element that has both the subsection and header classes. This basically works with any combination of selectors except multiple type selectors (since an element can’t be two different types at once, and divp would try to select a literal <divp> element which doesn’t exist). */
+
+/* ------------------------------------------------------------------------- */
+
+/* SECTION 3 */
+/* Descendant Combinator */
+/* Combinators allow us to combine multiple selectors differently than grouping or chaining them, as they show a relationship between the selectors. There are four types of combinators in total, but for right now we’re going to only show you the descendant combinator, which is represented in CSS by a single space between selectors. A descendant combinator will only cause elements that match the last selector to be selected if they also have an ancestor (parent, grandparent, etc) that matches the previous selector.
+
+So something like .ancestor .child would select an element with the class child if it has an ancestor with the class ancestor. Another way to think of it is child will only be selected if it is nested inside of ancestor, no matter how deeply. Take a quick look at the example below and see if you can tell which elements would be selected based on the CSS rule provided: */
+
+<!-- index.html -->
+
+<div class="ancestor"> <!-- A -->
+  <div class="contents"> <!-- B -->
+    <div class="contents"> <!-- C -->
+    </div>
+  </div>
+</div>
+
+<div class="contents"></div> <!-- D -->
+
+/* styles.css */
+
+.ancestor .contents {
+      /* some declarations */
+    }
+
+    /* In the above example, the first two elements with the contents class (B and C) would be selected, but that last element (D) won’t be. Was your guess correct?
+
+    There’s really no limit to how many combinators you can add to a rule, so .one .two .three .four would be totally valid. This would just select an element that has a class of four if it has an ancestor with a class of three, and if that ancestor has its own ancestor with a class of two, and so on. You generally want to avoid trying to select elements that require this level of nesting, though, as it can get pretty confusing and long, and it can cause issues when it comes to specificity. */
+
+    /* REFERENCE: https://www.theodinproject.com/paths/foundations/courses/foundations/lessons/css-foundations#basic-syntax */
